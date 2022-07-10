@@ -1,0 +1,44 @@
+.lbody{
+    height: 100vh;
+    /* background-image: url('https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg');
+    background-size: cover;
+    background-position: center center; */
+    background:linear-gradient(red,blue);
+    
+}
+
+.ldiv{
+    /* display: block; */
+    margin: 3vh;
+   
+   
+}
+.ldiv > input{
+    width:50vw;
+    height:3vh;
+    background-color: #ffffff;
+}
+
+.b{
+    height:4vh;
+    background-color: hwb(140 17% 54%);
+}
+.landingpagecontent_title{
+    display: block;
+}
+.combine{
+    /* width: 100vh; */
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    /* justify-content: center; */
+}
+
+.combine > p{
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color:hsl(0, 0%, 100%)
+}

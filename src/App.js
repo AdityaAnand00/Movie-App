@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Landingpage from './container/Landingpage/Landingpage';
+import Signinbody from './container/Signinbody/Signinbody';
+import Homepage from './container/Homepage/Homepage';
+import {useAuth0} from "@auth0/auth0-react";
+import userEvent from '@testing-library/user-event';
 
 function App() {
+
+ const {user,isAuthenticated,isLoading} = useAuth0();
+//  console.log(user);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+     <Routes>
+          <Route path="/" element = {isAuthenticated ?  <Homepage /> : <Landingpage/>}/>
+          {/* <Route path = "/" element = {isLoading && isAuthenticated ? <Homepage/> : <Landingpage/>}/> */}
+          {/* <Route path="/sign-in" element={<Signinbody />} /> */}
+          {/* <Route path = "/" element = {<Homepage />}/> */}
+        </Routes>
+    </BrowserRouter>
   );
 }
 

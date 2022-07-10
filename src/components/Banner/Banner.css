@@ -1,0 +1,53 @@
+.Bannerimage{
+    width: 100%;
+    margin-top: 0;
+    margin: 0px;
+    padding: 0px;
+    height: 70vh;
+ 
+    position: absolute;
+    top:0px;
+    
+}
+
+.Bannercontents{
+ /* margin:20vh; */
+ /* background-color: brown; */
+ /* padding: 2vw; */
+ /* margin-top: 10vh; */
+ /* width: fit-content; */
+ position: relative;
+ top: 30vh;
+ left:7vw;
+
+ width:fit-content;
+}
+
+
+
+.Bannercontents > h3{
+    font-style: italic;
+    font-size: 2vh;
+    font-weight: bolder;
+    width:50vw;
+    color:white;
+    /* background-color: red; */
+
+}
+
+.Bannerbuttons{
+    display: flex;
+    justify-content: space-between;
+    width:130px;
+}
+.Bannerbuttons > button{
+    background-color: #222222;
+    border: none;
+    /* color: aliceblue; */
+    padding: 1vh;
+    border-radius: 4px;
+}
+.Bannerbuttons > button:hover{
+ background-color: aliceblue;
+ color: black;
+}

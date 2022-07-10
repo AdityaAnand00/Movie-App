@@ -1,0 +1,12 @@
+.loginbutton{
+    display: block;
+    /* margin: auto; */
+    position: relative;
+    top:80px;
+    color: black;
+    background-color: aquamarine;
+    width:180px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}

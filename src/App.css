@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+*{
+  /* background-color: hsl(0, 2%, 8%); */
+  color: aliceblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+   background-color: rgb(30, 28, 28);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media only screen and (max-width: 700px){
+
+.Bannerimage{
+  width:100vw;
+  
+
+}
+.Bannercontents{
+  width:100vw;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Bannercontents > h1{
+  font-size: 18px;
+  width: 80vw !important;
+  /* background-color: antiquewhite; */
 }
 
-.App-link {
-  color: #61dafb;
+.row_poster{
+ 
+  height: 180px!important;
+}
+.combine{
+  /* width:80vw; */
+  /* margin:0 9vw; */
+}
+.ldiv{
+  width:80vw;
+}
+.landingpagecontent_subtitle, .landingpagecontent_title {
+  font-size: 2vh!important;
+}
+.landingpagecontent_description{
+  font-size: 2.8vw!important;
+  /* font-weight: 300!important; */
+}
+.ldiv{
+  width:100%!important;
+/* background-color: aqua;
+ */
+ display: flex!important;
+ justify-content: center!important;
+ align-items: flex-start!important;
+
+
+}
+.ldiv > input{
+  width:40vw!important;
+  /* height:2.5vh!important; */
+}
+.ldiv > button {
+  width:30vw!important;
+text-align: center;
+font-size: 2.3vw;
+/* height:4vh!important; */
+
+}
+.userhello{
+  /* font-size:2vw!important; */
+  /* background-color: aqua!important; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

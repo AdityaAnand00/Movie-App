@@ -1,0 +1,42 @@
+.signinbody{
+    color: aliceblue;
+    width: 100vw;
+    /* height: 100vh; */
+    /* background-color: brown; */
+    /* font-size: 2vw; */
+}
+
+.signin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    
+    
+}
+.signinbody_title{
+    font-size: 2vw;
+}
+
+.signin > input{
+    height: 3vh;
+    margin:1vh;
+    width:17vw;
+}
+
+.signin > button{
+    
+  width:17vw;
+  height: 4vh;
+  margin: 0.1vw 0px;
+  background-color: hsl(0, 8%, 16%);
+  border-radius: 0.3vw;
+  color: aliceblue;
+}
+.signin > button:hover{
+    background-color: #696d70;
+}
+.signinbody_text > span{
+    font-weight: bolder;
+}
