@@ -1,8 +1,8 @@
-## MOVIE-BOX , where you can see for your required movies according to its Genres and watch its trailer or related videos from you-tube 
+# MOVIE-BOX , where you can see for your required movies according to its Genres and watch its trailer or related videos from you-tube 
 
-# Description  : An app with sign-In , Sign-Out feature , movies arrnaged according to  Genre and watch trailer of related movies . A crisp use of API's .
+ Description  : An app with sign-In , Sign-Out feature , movies arrnaged according to  Genre and watch trailer of related movies . A crisp use of API's .
 
-# Tech-Stack   : React js , HTML , CSS  
+ Tech-Stack   : React js , HTML , CSS  
 
 ## ![m1](https://user-images.githubusercontent.com/87204998/202901674-03a84f1f-42a1-43ad-85e1-92a7299c3b5a.png)
 ## ![m6](https://user-images.githubusercontent.com/87204998/202901686-0a547328-ba44-41b2-9079-058cb361cb25.png)
