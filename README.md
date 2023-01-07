@@ -1,6 +1,6 @@
 MOVIE-BOX , where you can see for your required movies according to its Genres and watch its trailer or related videos from you-tube 
 
-# check it out : https://moviebox2-o.herokuapp.com/
+
 
  Description  : An app with sign-In , Sign-Out feature , movies arrnaged according to  Genre and watch trailer of related movies . A crisp use of API's .
 
