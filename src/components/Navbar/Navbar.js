@@ -1,8 +1,8 @@
 import React from 'react';
 import "./Navbar.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import movie from "../../images/movie.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import userpic from "../../images/userpic.png";
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -46,7 +46,7 @@ useEffect(() => {
   return (
    <div className={`navdiv ${show && 'navcolor'} ${dark && 'dc'}`}>
         
-        <img src={movie} className='logo'/>
+        <img src={movie} alt = '' className='logo'/>
 
       {
        pr ? (
@@ -59,7 +59,7 @@ useEffect(() => {
       }
 
       {
-        logOut &&(<div className='userdiv'> <h1 className='userhello'> {user && ` Hi, ${user.name}`}</h1><img src={userpic} className="userimg" onClick={()=> logout({returnTo: window.location.origin,})}  />   </div>) 
+        logOut &&(<div className='userdiv'> <h1 className='userhello'> {user && ` Hi, ${user.name}`}</h1><img src={userpic} alt='' className="userimg" onClick={()=> logout({returnTo: window.location.origin,})}  />   </div>) 
         
       }
 

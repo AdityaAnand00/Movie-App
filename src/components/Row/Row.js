@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./Row.css";
 import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
+import { useCallback } from "react";
 
 function Row({ title, fetchUrl, isLargeRow }) {
   const [movie, setMovie] = useState([]);
@@ -10,14 +11,17 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
   const base_url = "https://image.tmdb.org/t/p/original/";
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+ 
 
-  async function fetchData() {
+  const fetchData = useCallback(async function () {
     const request = await axios.get(fetchUrl);
     setMovie(request.data.results);
-  }
+  }, [fetchUrl]) ;
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
+
   const opts = {
     height: "390",
     width: "100%",

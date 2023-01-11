@@ -2,7 +2,7 @@
 import './Banner.css';
 import axios from 'axios';
 import React, { useEffect, useState } from "react";
-import requests from '../../Requests/requests';
+// import requests from '../../Requests/requests';
 // import Navbar from '../Navbar/Navbar';
 
 function Banner() {
